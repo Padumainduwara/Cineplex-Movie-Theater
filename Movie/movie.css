@@ -1,0 +1,264 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+/* Search Bar styles */
+
+.search-bar {
+    display: flex;
+    align-items: end;
+}
+
+.search-bar form {
+    display: contents;
+}
+
+.search-bar input[type="text"] {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+    width: 150px;
+    /* Adjust width as needed */
+}
+
+.search-bar button {
+    padding: 8px 15px;
+    background-color: #ff4500;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.movie-card {
+    width: 100%;
+    /* Adjust as needed for your design */
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-out;
+    margin-bottom: 200px;
+    /* Add margin for spacing between cards */
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+}
+
+.movie-card img {
+    width: 150%;
+    height: auto;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.movie-card-content {
+    padding: 20px;
+}
+
+.movie-card h3 {
+    margin-top: 0;
+}
+
+.movie-card p {
+    margin-bottom: 0;
+}
+
+.movie-card a {
+    display: block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #ff4500;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.movie-card a:hover {
+    background-color: #e63e00;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ff4500;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e63e00;
+}
+
+.theater-info {
+    background-color: #fff;
+    padding: 50px 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.movie-details {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.movie-poster img {
+    max-width: 100%;
+    height: auto;
+}
+
+.movie-info {
+    max-width: 600px;
+    margin-left: 20px;
+}
+
+.cta-buttons {
+    margin-top: 20px;
+}
+
+.theater-info h2 {
+    text-align: center;
+}
+
+.info-content {
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+}
+
+h1 {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: static;
+    bottom: 0;
+    width: auto;
+}
+
+
+/* Your existing styles here */
+
+.trailer-container {
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    /* Aspect ratio 16:9 */
+    overflow: hidden;
+}
+
+.trailer-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.rating {
+    color: #ffcc00;
+    /* Yellow color for stars */
+    font-size: 1.2rem;
+}
+
+.star {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: static;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 3rem;
+    text-decoration: none;
+}
+
+.footer .box-container .box h3 {
+    color: white;
+    font-size: 15px;
+    padding-bottom: 20px;
+    text-decoration: none;
+    text-decoration: none;
+}
+
+.footer .box-container .box a {
+    color: rgb(185, 185, 185);
+    font-size: 12px;
+    padding-bottom: 12px;
+    display: block;
+    text-decoration: none;
+}
+
+.footer .box-container .box i {
+    color: #0d6efd;
+    padding-right: 8px;
+    transition: .2s linear;
+    text-decoration: none;
+}
+
+.footer .box-container .box a:hover i {
+    padding-right: 20px;
+    text-decoration: none;
+}

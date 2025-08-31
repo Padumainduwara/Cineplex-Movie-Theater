@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Cineplex</title>
+    <link rel="stylesheet" href="theaterinfo.css">
+    <style>
+        .contact-us-section {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .contact-us-section p {
+            color: #666;
+            margin-bottom: 30px;
+        }
+        
+        form {
+            display: grid;
+            gap: 20px;
+        }
+        
+        label {
+            font-weight: bold;
+        }
+        
+        input,
+        textarea {
+            width: auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        button {
+            background-color: #ff4500;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #e63e00;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="images/cineplex.png" alt="Cineplex Logo">
+            <h1>Cineplex</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.php">Home</a></li>
+                <li><a href="movies.php">Movies</a></li>
+                <li><a href="booking.php">Booking</a></li>
+                <li><a href="theaterinfo.php">Theater Info</a></li>
+                <li><a href="./login/login.html">login</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <form action="search.php" method="GET">
+                <input type="text" name="query" placeholder="Search movies...">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </header>
+
+    <section class="contact-us-section"> <br>
+        <h1>Contact Cineplex Films & Theatres</h1>
+        <p>Visit us at our Kandy location or use the contact form below to get in touch with us. Should you wish to contact us for any matter you can reach us on the following address or contact numbers listed below.</p>
+
+        <p><strong>Email Support:</strong> <a href="mailto:contact@cineplexmovies.com">help@cineplexmovies.com</a></p>
+
+        <p>Email our support team for other queries regarding booking changes, refund details, bank issues.</p>
+
+        <p>If you wish to contact us via email please fill in the following form and we will get in touch with you at the earliest.</p>
+
+        <form action="process_contact.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <br>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="home.php">Home</a></li>
+                        <li><a href="theaterinfo.php">About Us</a></li>
+                        <li><a href="ask.php">Ask Question</a></li>
+                        <li><a href="theaterinfo.php">Privancy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="./Booking/Booking.php">Buy Tickets</a></li>
+                        <li><a href="foodorder.html">Snack Bar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <ul>
+                        <li><a href="www.facebook.com">Facebook</a></li>
+                        <li><a href="www.youtube.com">Youtube</a></li>
+                        <li><a href="www.instagram.com">Instagram</a></li>
+                        <li><a href="www.linkedin.com">Linked in</a></li>
+                    </ul>
+                </div>
+                <div class="subscribe-container">
+                    <input type="email" class="subscribe-input" placeholder="Your email">
+                    <button type="submit" class="subscribe-button">Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="copyright">&copy; 2024 Cineplex. All rights reserved.</div>
+    </footer>
+</body>
+
+</html>
